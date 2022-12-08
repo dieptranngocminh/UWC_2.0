@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_yellow"
+    tools:context=".showTask">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="48dp"
+        android:background="#EBED98"
+        android:translationZ="100dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="TASK"
+            android:textColor="#433C03"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.103" />
+
+        <Button
+            android:id="@+id/moveBack"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="-8dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00EEECC0"
+            android:text="<"
+            android:textAlignment="textStart"
+            android:textColor="#433C03"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/task_layout"
+        android:layout_width="354dp"
+        android:layout_height="560dp"
+        android:layout_marginTop="152dp"
+        android:background="#FFFFFF"
+        android:translationZ="100dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/taskRouteTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskDescription"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="15dp"
+            android:text="Route assigned:"
+            android:textColor="#433C03"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskIdTitle" />
+
+        <TextView
+            android:id="@+id/taskType6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskTypeTitle"
+            android:layout_alignStart="@id/taskTypeTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="174dp"
+            android:textColor="#433C03"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/taskTypeTitle"
+            app:layout_constraintTop_toBottomOf="@id/taskTypeTitle" />
+
+        <TextView
+            android:id="@+id/taskRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskRouteTitle"
+            android:layout_alignStart="@id/taskRouteTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#433C03"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/taskRouteTitle"
+            app:layout_constraintTop_toBottomOf="@id/taskRouteTitle" />
+
+        <TextView
+            android:id="@+id/taskDescriptionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskMCP"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="15dp"
+            android:text="Task description:"
+            android:textColor="#433C03"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskIdTitle" />
+
+        <TextView
+            android:id="@+id/taskType5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskTypeTitle"
+            android:layout_alignStart="@id/taskTypeTitle"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="101dp"
+            android:textColor="#433C03"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/taskTypeTitle"
+            app:layout_constraintTop_toBottomOf="@id/taskTypeTitle" />
+
+        <TextView
+            android:id="@+id/taskDescription"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskDescriptionTitle"
+            android:layout_alignStart="@id/taskDescriptionTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#433C03"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/taskDescriptionTitle"
+            app:layout_constraintTop_toBottomOf="@id/taskDescriptionTitle" />
+
+        <TextView
+            android:id="@+id/taskMCPTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskType"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="15dp"
+            android:text="MCP assigned:"
+            android:textColor="#433C03"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskIdTitle" />
+
+        <TextView
+            android:id="@+id/taskMCP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskMCPTitle"
+            android:layout_alignStart="@id/taskMCPTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#433C03"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/taskMCPTitle"
+            app:layout_constraintTop_toBottomOf="@id/taskMCPTitle" />
+
+        <TextView
+            android:id="@+id/taskTypeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskCICO"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="15dp"
+            android:text="Job Type:"
+            android:textColor="#433C03"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskIdTitle" />
+
+        <TextView
+            android:id="@+id/taskType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskTypeTitle"
+            android:layout_alignStart="@id/taskTypeTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#433C03"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/taskTypeTitle"
+            app:layout_constraintTop_toBottomOf="@id/taskTypeTitle" />
+
+
+        <TextView
+            android:id="@+id/taskCICOTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskId"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="15dp"
+            android:text="Check in - Check out:"
+            android:textColor="#433C03"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskIdTitle" />
+
+        <TextView
+            android:id="@+id/taskCICO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/taskCICOTitle"
+            android:layout_alignStart="@id/taskCICOTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#433C03"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/taskCICOTitle"
+            app:layout_constraintTop_toBottomOf="@id/taskCICOTitle" />
+
+        <TextView
+            android:id="@+id/taskIdTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskInfo"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="15dp"
+            android:text="Task ID:"
+            android:textColor="#433C03"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskInfo" />
+
+        <TextView
+            android:id="@+id/taskId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskIdTitle"
+            android:layout_alignStart="@+id/taskIdTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#433C03"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/taskIdTitle"
+            app:layout_constraintTop_toBottomOf="@id/taskIdTitle" />
+
+        <TextView
+            android:id="@+id/taskInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="13dp"
+            android:text="Task Information"
+            android:textColor="#433C03"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

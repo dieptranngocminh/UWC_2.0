@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.logicdesign_project_final">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_adt2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LogicDesign_Project_Final">
+<!--        <activity-->
+<!--            android:name=".Adapter"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".route_history"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".Changeprofile"
+            android:exported="false"
+            android:parentActivityName=".Setting" />
+        <activity
+            android:name=".about_us"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Setting"
+            android:exported="false"
+            android:label="Setting"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Map"
+            android:exported="false"
+            android:label="Map"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Message"
+            android:exported="false"
+            android:label="Message"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TaskList"
+            android:exported="false"
+            android:label="Task List"
+            android:parentActivityName=".MainActivity" /> <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/> -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".CalendarLayout"
+            android:exported="false"
+            android:label="Calendar"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

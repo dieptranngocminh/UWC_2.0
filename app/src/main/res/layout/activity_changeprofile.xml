@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_yellow"
+    tools:context=".Changeprofile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Profile"
+            android:layout_width="288dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="674dp"
+            android:fontFamily="serif"
+            android:text="CHANGE PROFILE"
+            android:textColor="#433C03"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/FullnameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:text="Full name"
+        android:textColor="#433C03"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constrintLeft_toLeftOf="parent"-->
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FullnameTitle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#433C03"
+        android:textSize="23dp"
+        app:layout_constraintLeft_toLeftOf="@id/FullnameTitle"
+        app:layout_constraintTop_toBottomOf="@id/FullnameTitle" />
+
+    <TextView
+        android:id="@+id/DobTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FullnameTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="55dp"
+        android:text="Date of Birth"
+        android:textColor="#433C03"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/Fullname"
+        app:layout_constraintTop_toBottomOf="@+id/FullnameTitle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DobTitle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#433C03"
+        android:textSize="23dp"
+        app:layout_constraintLeft_toLeftOf="@+id/Fullname"
+        app:layout_constraintTop_toBottomOf="@+id/DobTitle" />
+
+    <TextView
+        android:id="@+id/GenderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DobTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="55dp"
+        android:text="Gender"
+        android:textColor="#433C03"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/Dob"
+        app:layout_constraintTop_toBottomOf="@+id/DobTitle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GenderTitle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#433C03"
+        android:textSize="23dp"
+        app:layout_constraintLeft_toLeftOf="@+id/Dob"
+        app:layout_constraintTop_toBottomOf="@+id/GenderTitle" />
+
+    <TextView
+        android:id="@+id/EmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IDTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="55dp"
+        android:text="Email"
+        android:textColor="#433C03"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/GenderTitle"
+        app:layout_constraintTop_toBottomOf="@+id/Gender" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EmailTitle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#433C03"
+        android:textSize="23dp"
+        app:layout_constraintLeft_toLeftOf="@+id/Gender"
+        app:layout_constraintTop_toBottomOf="@+id/EmailTitle" />
+
+    <TextView
+        android:id="@+id/IDTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GenderTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="55dp"
+        android:text="ID"
+        android:textColor="#433C03"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/PhonenumberTitle"
+        app:layout_constraintTop_toBottomOf="@+id/Phonenumber" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IDTitle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="23dp"
+        app:layout_constraintLeft_toLeftOf="@+id/Phonenumber"
+        app:layout_constraintTop_toBottomOf="@+id/IDTitle" />
+
+    <Button
+        android:id="@+id/updatebtn"
+        android:layout_width="165dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/Email"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#eeecc0"
+        android:gravity="center"
+        android:onClick="update"
+        android:text="UPDATE"
+        android:textColor="#433C03"
+        android:textSize="30dp" />
+</RelativeLayout>
